@@ -1,0 +1,80 @@
+.container {
+  padding: 0 16px;
+  white-space: break-spaces;
+  word-break: break-word;
+}
+
+.slide-up-in {
+  animation-name: slideUpIn;
+  animation-duration: 0.5s;
+}
+
+.slide-up-out {
+  animation-name: slideUpOut;
+  animation-duration: 0.5s;
+}
+
+@keyframes slideUpIn {
+  from {
+      opacity: 0.5;
+      transform: translateY(100%);
+      position: absolute;
+  } 
+  to {
+      opacity: 1;
+      transform: translateY(0);
+      position: initial;
+  }
+}
+
+@keyframes slideUpOut {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+      position: absolute;
+  } 
+  to {
+      opacity: 0;
+      transform: translateY(-100%);
+      position: initial;
+  }
+}
+
+
+/* FOR PREV ANIMATION */
+
+@keyframes slideDownIn {
+  from {
+      opacity: 0.5;
+      transform: translateY(-100%);
+      position: absolute;
+  } 
+  to {
+      opacity: 1;
+      transform: translateY(0);
+      position: initial;
+  }
+}
+
+@keyframes slideDownOut {
+  from {
+      opacity: 0.5;
+      transform: translateY(0);
+      position: absolute;
+  } 
+  to {
+      opacity: 1;
+      transform: translateY(100%);
+      position: initial;
+  }
+}
+
+.slide-down-in {
+  animation-name: slideDownIn;
+  animation-duration: 0.5s;
+}
+
+.slide-down-out {
+  animation-name: slideDownOut;
+  animation-duration: 0.5s;
+}

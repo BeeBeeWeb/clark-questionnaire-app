@@ -1,0 +1,31 @@
+.welcome {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  white-space: break-spaces;
+  word-break: break-word;
+  padding: 0 16px;
+}
+
+p.desc {
+  font-size: 24px;
+}
+
+p.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+p.time span {
+  margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+  p.desc {
+    width: 50%;
+  }
+}
